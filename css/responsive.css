@@ -1,0 +1,37 @@
+@media (max-width: 1400px) { 
+   
+    .footer-phara p{
+        width: 500px;
+        font-family: "poppins";
+        margin-top: 30px;
+    }
+    .footer-top-right{
+        padding-left: 50px; 
+        margin-left: 80px;  
+       display: flex;
+       flex-wrap: wrap;
+    }
+    form{
+        padding: 16px 20px;
+        font-size: 20px;
+    }
+    input{
+        border: none;
+        padding: 10px 20px 10px 3px;
+        border-bottom: 1px solid black;
+        outline: none;
+        background-color: transparent;
+    }
+    .btn-I{
+        padding: 10px 50px;
+        background-color: black;
+        border: none;
+        border-radius: 30px;
+    }
+    .btn-I a{
+        color: white;
+        text-decoration: none;
+        font-family: "poppins";
+        font-size: 18px;
+    }
+ }

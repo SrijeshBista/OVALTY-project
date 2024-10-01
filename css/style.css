@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Baskervville SC", serif;
+}
+/* header start  */
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.logo h1{
+    font-size: 30px;
+    padding-top: 30px;
+}
+li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 25px;
+    padding-top: 30px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    
+}
+li a:hover{
+    border-bottom: 3px solid black;
+    font-weight: 650;
+}
+.hamburger-menu {
+    position: relative;
+   
+}
+.hamburger-menu input{
+     width: 45px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 5;
+    opacity: 0;
+    display: block;
+}
+.hamburger-line{
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-item-button{
+    display: none;
+}
+.hamburger-menu input:checked ~ .nav-item-button{
+    display: block;
+    position: absolute;
+    top: 44px;
+    right: 0px;
+    background-image: url(../img/bggif.jpg);
+    height: 50vh;
+}
+.nav-item-button{
+    width: 220px;
+    padding: 10px 20px;
+   
+}
+.nav-item-button li a{
+    font-family: cursive;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.hamburger-line .line{
+   background-color: black;
+    display: block;
+    height: 4px ;
+    width: 100%;
+    border-radius: 20px;
+}
+/* header end   */
+/* banner section start  */
+.banner-main{
+    width: 990px;
+ margin-left: 16%;
+}
+.thin-heading h1{
+    font-size: 90px;
+    font-weight: 200;
+    width: 100%;
+}
+.thin-heading .SPAN-I img{
+    width: 85px;
+    height: 44px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.thin-heading .SPAN-II img{
+    width: 100px;
+    height: 65px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.thin-heading .SPAN-III img{
+    width: 110px;
+    height: 53px;
+    margin-bottom: 20px;
+    border-radius: 25px ;
+    border: 2px solid black;
+    object-fit: cover;
+}
+/* banner section end  */
+/* helping section start  */
+#helping-section{
+    background-color: rgba(250, 235, 215, 0.275);
+    padding: 80px 0px;
+}
+.helping-section-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.helping-section-inside{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.question h3{
+    font-size: 16px;
+    font-family: "poppins";
+    color: gray;
+}
+.middle-line H2{
+    font-size: 180px;
+}
+.btn-1 {
+    border: none;
+    background-color: transparent;
+}
+.btn-1 a{
+    color: black;
+    font-size: 18px;
+    font-family: "poopins";
+}
+.image-I {
+    width: 600px;
+}
+.image-I img{
+    width: 100%;
+    border-radius:50% 50% 50% 65%;
+    height: 600px;
+}
+/* helping section end  */
+/* about other section start  */
+.about-feature-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: CENTER;
+}
+.about-feature-inside{
+    display: flex;
+    justify-content: space-between;
+    align-items: CENTER;
+}
+.heading h1{
+    width: 705px;
+}
+.image-II{
+    width: 550px;
+}
+.image-II img{
+    width: 100%;
+    border-radius:50% 50% 70% 70%;
+    height: 550px;
+}
+/* about other section end   */
+/* partnership section start  */
+#partnership{
+    background-color: rgba(250, 235, 215, 0.275);
+    padding: 80px 0px;
+}
+.partnership-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.partnership-left-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   gap: 50px;
+   margin-left: 30px;
+   margin-top: 40px;
+}
+.slim-heading h4{
+    width: 270px;
+    font-family: "poppins";
+    font-size: 19px;
+    font-weight: 400;
+    color: gray;
+}
+.slim-heading-Middle h4{
+    color: black;
+}
+.middle-heading h3{
+    font-family: "poppins";
+    font-size: 30px;
+    font-weight: 550;
+    width: 270px;
+}
+.image img{
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+}
+/* partnership section end   */
+/* recent work section start  */
+.history-main{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 50px;
+    
+}
+.assignment{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.marketing-middle{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.marketing-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items:center
+}
+.title p{
+    font-family: "poppins";
+    font-size: 25px;
+}
+.line h2{
+    font-size: 80px;
+}
+.date p{
+    font-family: "poppins";
+    color: gray;
+}
+.assignment-title h2{
+    font-family: "poppins";
+}
+.company-name p{
+    font-family: "poppins";font-weight: 600;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    padding-top: 10px;
+}
+.marketing-top p{
+    width: 450px;
+    color: gray;
+    font-family: "poppins";
+    padding-bottom: 70px;
+}
+.pic{
+    width: 200px;
+}
+.pic img{
+    width: 100%;
+    height: 200px;
+    border-radius: 70% 50% 50% 60%;
+}
+.marketing-bottom{
+    border-bottom: 4px solid gray;
+    padding-top: 20px;
+}
+.one p{
+    font-size: 19px;
+    font-weight: 700;
+}
+.number-slider a{
+   color: black;
+   font-family: "poppins";
+   text-decoration: none;
+   font-size: 17px;
+}
+.pic1{
+    width: 200px;
+}
+.pic1 img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 70% 70% 50% 60%;
+}
+/* recent work section end   */
+/* footer start  */
+footer{
+    background-color: rgba(250, 235, 215, 0.275);
+    padding: 80px 0px;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-title h1{
+    font-family: "poppins";
+    width: 320px;
+    font-size: 40px;
+}
+.footer-phara p{
+    width: 550px;
+    font-family: "poppins";
+    margin-top: 30px;
+}
+.footer-top-right{
+    padding-left: 50px; 
+    margin-left: 80px;  
+   display: flex;
+   flex-wrap: wrap;
+}
+form{
+    padding: 16px 20px;
+    font-size: 20px;
+}
+input{
+    border: none;
+    padding: 10px 20px 10px 3px;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: transparent;
+}
+.btn-I{
+    padding: 10px 50px;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+}
+.btn-I a{
+    color: white;
+    text-decoration: none;
+    font-family: "poppins";
+    font-size: 18px;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-bottom  h4 {
+    font-family: cursive;
+    padding-bottom: 20px;
+}
+.footer-bottom p a{
+    color: black;
+    font-family: "poppins";
+    text-decoration: none;
+    font-size: 16px;
+}
+/* footer end  */
